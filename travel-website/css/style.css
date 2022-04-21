@@ -32,6 +32,23 @@ section {
   padding: 2rem 9%;
 }
 
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heading span {
+  font-size: 3.5rem;
+  color: var(--orange);
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  background: rgba(255, 165, 0, 0.2);
+}
+
+.heading span.space {
+  background: none;
+}
+
 .btn {
   font-size: 1.7rem;
   display: inline-block;
@@ -285,6 +302,47 @@ header .search-bar-container label:hover {
   background: var(--orange);
 }
 
+#book .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+#book .row .image {
+  flex: 1 1 40rem;
+}
+
+#book .row .image img {
+  width: 100%;
+}
+
+#book .row form {
+  flex: 1 1 40rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+#book .row form .input-box {
+  padding: 0.5rem 0;
+}
+
+#book .row form .input-box input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+#book .row form .input-box h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #666;
+}
+
 /* media queries */
 
 @media (max-width: 1200px) {
@@ -335,5 +393,9 @@ header .search-bar-container label:hover {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .heading span {
+    font-size: 2.5rem;
   }
 }
