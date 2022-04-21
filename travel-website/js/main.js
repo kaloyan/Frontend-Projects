@@ -1,9 +1,21 @@
 const searchBtn = document.querySelector("#search-btn");
 const searchBar = document.querySelector(".search-bar-container");
 
+const loginBtn = document.querySelector("#login-btn");
+const loginForm = document.querySelector(".login-form-container");
+const loginClose = document.querySelector("#form-close");
+
 searchBtn.addEventListener("click", (e) => {
   searchBtn.classList.toggle("fa-times");
   searchBar.classList.toggle("active");
+});
+
+loginBtn.addEventListener("click", (e) => {
+  loginForm.classList.add("active");
+});
+
+loginClose.addEventListener("click", (e) => {
+  loginForm.classList.remove("active");
 });
 
 window.onscroll = () => {
