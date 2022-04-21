@@ -8,6 +8,8 @@ const loginClose = document.querySelector("#form-close");
 const menuBar = document.querySelector("#menu-bar");
 const navbar = document.querySelector("nav.navbar");
 
+const videoBtns = document.querySelectorAll(".vid-btn");
+
 searchBtn.addEventListener("click", (e) => {
   searchBtn.classList.toggle("fa-times");
   searchBar.classList.toggle("active");
@@ -24,6 +26,16 @@ menuBar.addEventListener("click", (e) => {
 
 loginClose.addEventListener("click", (e) => {
   loginForm.classList.remove("active");
+});
+
+videoBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    document.querySelector(".controls .active").classList.remove("active");
+    e.target.classList.add("active");
+
+    const src = e.target.getAttribute("data-src");
+    document.querySelector("#video-slider").setAttribute("src", src);
+  });
 });
 
 window.onscroll = () => {
