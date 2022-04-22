@@ -343,6 +343,62 @@ header .search-bar-container label:hover {
   color: #666;
 }
 
+#packages .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
+#packages .box-container .box {
+  flex: 1 1 40rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+#packages .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+#packages .box-container .box .content {
+  padding: 2rem;
+}
+
+#packages .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+#packages .box-container .box .content h3 i {
+  color: var(--orange);
+}
+
+#packages .box-container .box .content p {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+#packages .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+}
+
+#packages .box-container .box .content .price {
+  font-size: 2rem;
+  columns: #333;
+  padding-top: 1rem;
+}
+
+#packages .box-container .box .content .price span {
+  font-size: 1.5rem;
+  color: #666;
+  text-decoration: line-through;
+}
+
 /* media queries */
 
 @media (max-width: 1200px) {
