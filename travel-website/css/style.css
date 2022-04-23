@@ -484,6 +484,42 @@ header .search-bar-container label:hover {
   padding-top: 0.5rem 0;
 }
 
+#review .review-slider {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+#review .box {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.5.rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+#review .box img {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+#review .box h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+#review .box p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+#review .box .stars {
+  font-size: 1.7rem;
+  color: var(--orange);
+}
+
 /* media queries */
 
 @media (max-width: 1200px) {
