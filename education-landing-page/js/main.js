@@ -14,7 +14,7 @@ const overlay = document.querySelector("[data-overlay]");
 });
 
 // header sticky functionality
-const header = document.querySelector("[data=header]");
+const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", (e) => {
   window.scrollY >= 20
