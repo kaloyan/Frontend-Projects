@@ -140,7 +140,8 @@ h3 {
   color: var(--onyx);
 }
 
-.section-text {
+.section-text,
+.card-text {
   color: var(--sonic-silver);
   line-height: 1.8;
   font-size: var(--fs-5);
@@ -323,4 +324,75 @@ h3 {
 
 .about .section-text {
   margin-bottom: 50px;
+}
+
+/* departments section */
+.departments {
+  padding-block: var(--section-padding);
+  background: var(--floral-white);
+}
+
+.departments-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.departments-list {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.departments-card {
+  background: var(--white);
+  box-shadow: 5px 30px 50px hsla(0, 1%, 15%, 0.05);
+  max-width: 400px;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.departments-card .card-banner {
+  margin-bottom: 20px;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.departments-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.departments-card:hover img {
+  transform: scale(1.05);
+}
+
+.departments-card .card-title {
+  margin-bottom: 15px;
+}
+
+.departments-card .card-text {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.departments-card .card-link {
+  color: var(--orange-web);
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: var(--ff-rubik);
+  font-weight: var(--fw-500);
+  transition: var(--transition);
+}
+
+.departments-card .card-link:is(:hover, :focus) {
+  gap: 15px;
+}
+
+.departments .btn-primary {
+  margin-inline: auto;
 }
