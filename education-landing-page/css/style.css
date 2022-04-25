@@ -147,6 +147,10 @@ h3 {
   font-family: var(--ff-rubik);
 }
 
+.vector-line {
+  display: none;
+}
+
 /* header */
 .header {
   padding-block: 25px;
@@ -263,4 +267,60 @@ h3 {
 
 .hero .section-text {
   margin-bottom: 45px;
+}
+
+/* about section  */
+.about {
+  padding-block: var(--section-padding);
+}
+
+.about-banner {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.play-btn {
+  position: absolute;
+  bottom: 24%;
+  right: 8%;
+  width: 80px;
+  height: 80px;
+  background: var(--white);
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.play-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  animation: pulseAnim 2s forwards infinite;
+}
+
+@keyframes pulseAnim {
+  0% {
+    transform: scale(1);
+    border-color: var(--black);
+  }
+
+  100% {
+    transform: scale(1.5);
+    border-color: transparent;
+  }
+}
+
+.about-title {
+  margin-bottom: 3-px;
+}
+
+.about .section-text {
+  margin-bottom: 50px;
 }
