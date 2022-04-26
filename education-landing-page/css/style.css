@@ -109,6 +109,7 @@ body {
 .btn-primary {
   background: var(--orange-web);
   box-shadow: 5px 10px 30px hsla(39, 100%, 50%, 0.3);
+  margin-inline: auto;
 }
 
 .btn-primary:is(:hover, :focus) {
@@ -141,7 +142,8 @@ h3 {
 }
 
 .section-text,
-.card-text {
+.card-text,
+.card-subtitle {
   color: var(--sonic-silver);
   line-height: 1.8;
   font-size: var(--fs-5);
@@ -395,4 +397,63 @@ h3 {
 
 .departments .btn-primary {
   margin-inline: auto;
+}
+
+/* instructor section */
+.instructor {
+  padding-block: var(--section-padding);
+}
+
+.instructor .title-wrapper {
+  margin-bottom: 80px;
+}
+
+.instructor-title {
+  margin-bottom: 30px;
+}
+
+.instructor-list {
+  display: grid;
+  gap: 40px;
+}
+
+.instructor-card {
+  text-align: center;
+}
+
+.instructor-card .card-banner {
+  margin-bottom: 30px;
+  transition: var(--transition);
+}
+
+.instructor-card:hover .card-banner {
+  transform: translateY(-5px);
+}
+
+.instructor-card img {
+  width: 100%;
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.instructor-card .card-title {
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-2);
+  color: var(--onyx);
+}
+
+.instructor-card .card-subtitle {
+  margin-bottom: 15px;
+}
+
+.card-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-social-link {
+  color: var(--onyx);
+  font-size: 25px;
 }
