@@ -472,3 +472,128 @@ h3 {
 .cta-banner {
   display: none;
 }
+
+/* footer section */
+.footer {
+  background: var(--rich-black-fogra-29);
+}
+
+.footer-top {
+  padding-block: var(--section-padding);
+}
+
+.footer-brand {
+  margin-bottom: 50px;
+}
+
+.footer-brand .logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-family: var(--ff-rubik);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: var(--silver-chalice);
+}
+
+.footer .social-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer .social-link {
+  background: var(--raisin-black);
+  color: var(--silver-chalice);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--raisin-black);
+  transition: var(--transition);
+}
+
+.footer .social-link:is(:hover, :focus) {
+  background: var(--rich-black-fogra-29);
+  color: var(--cultured);
+}
+
+.footer-link-box {
+  display: grid;
+  gap: 30px;
+}
+
+.footer-list {
+  max-width: 230px;
+}
+
+.footer-list li:first-child {
+  margin-bottom: 10px;
+}
+
+.footer-link-title {
+  color: var(--cultured);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-4);
+}
+
+.footer-link {
+  color: var(--silver-chalice);
+  font-family: var(--ff-rubik);
+  padding-block: 10px;
+  transition: var(--transition);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--cultured);
+  transform: translateX(3px);
+}
+
+.footer .contact-item {
+  padding-block: 10px;
+}
+
+.footer .contact-item span {
+  display: inline-block;
+  color: var(--cultured);
+  font-family: var(--ff-rubik);
+  font-weight: var(--fw-500);
+}
+
+.footer .contact-link {
+  display: inline-block;
+  color: var(--silver-chalice);
+  font-family: var(--ff-rubik);
+  font-weight: var(--fw-500);
+}
+
+.footer .contact-link address {
+  font-style: normal;
+}
+
+.footer-bottom {
+  padding-block: 20px;
+  border-top: 1px solid var(--onyx);
+}
+
+.copyright {
+  color: var(--silver-chalice);
+  font-family: var(--ff-rubik);
+  line-height: 1.7;
+  text-align: center;
+}
+
+.copyright a {
+  display: inline-block;
+  color: inherit;
+  transition: var(--transition);
+}
+
+.copyright a:is(:hover, :focus) {
+  color: var(--cultured);
+}
