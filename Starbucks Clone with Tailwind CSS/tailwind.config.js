@@ -5,6 +5,9 @@ module.exports = {
       fontSize: {
         sm: ["14px"],
       },
+      colors: {
+        startGreen: "#d4e9e2",
+      },
     },
   },
   plugins: [],
