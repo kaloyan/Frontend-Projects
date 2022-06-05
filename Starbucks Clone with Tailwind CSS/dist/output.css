@@ -492,6 +492,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.5rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .flex{
   display: flex;
 }
@@ -549,6 +553,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -559,12 +568,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(212 233 226 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/public\/img\/1\.webp\'\)\]{
-  background-image: url('/public/img/1.webp');
+.bg-darkGreen{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 57 50 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/public\/img\/1\.webp\'\)\]{
   background-image: url('../public/img/1.webp');
+}
+
+.bg-\[url\(\'\.\.\/public\/img\/2\.webp\'\)\]{
+  background-image: url('../public/img/2.webp');
+}
+
+.bg-\[url\(\'\.\.\/public\/img\/3\.jpg\'\)\]{
+  background-image: url('../public/img/3.jpg');
 }
 
 .bg-contain{
@@ -622,6 +640,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 * {
   font-family: "Noto Sans", sans-serif;
+}
+
+.hover\:bg-slate-50:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px){

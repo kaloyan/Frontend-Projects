@@ -7,6 +7,7 @@ module.exports = {
       },
       colors: {
         startGreen: "#d4e9e2",
+        darkGreen: "#1e3932",
       },
     },
   },
