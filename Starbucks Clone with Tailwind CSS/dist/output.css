@@ -585,6 +585,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../public/img/3.jpg');
 }
 
+.bg-\[url\(\'\.\.\/public\/img\/4\.jpg\'\)\]{
+  background-image: url('../public/img/4.jpg');
+}
+
 .bg-contain{
   background-size: contain;
 }
