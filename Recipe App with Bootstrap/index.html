@@ -24,6 +24,96 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <h1>Coffee Shop</h1>
+    <div class="container">
+      <div class="row m-4 text-center">
+        <h1 class="text-primary display-4 fw-normal">Coffee Brew Recipes</h1>
+        <p class="fs-5 text-muted">
+          Add custom recipes for your home brews below.
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <form
+          id="recipe-form"
+          class="p-4 m-4 row shadow-sm rounded-3 border border-primary"
+        >
+          <div class="form-group col-md-4 my-2">
+            <label for="name">Name of Recipe</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="name"
+              class="form-control"
+              placeholder="e.g. Morning Brew"
+            />
+          </div>
+
+          <div class="form-group col-md-4 my-2">
+            <label for="method">Brew Method</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="method"
+              class="form-control"
+              placeholder="e.g. v60 Pour Over"
+            />
+          </div>
+
+          <div class="form-group col-md-4 my-2">
+            <label for="roast">Roast</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="roast"
+              class="form-control"
+              placeholder="e.g. Full City"
+            />
+          </div>
+
+          <div class="form-group col-md-4 my-2">
+            <label for="grind">Grind Size</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="grind"
+              class="form-control"
+              placeholder="e.g. 30"
+            />
+          </div>
+
+          <div class="form-group col-md-4 my-2">
+            <label for="ratio">Ratio</label>
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="ratio"
+              class="form-control"
+              placeholder="e.g. 1:16"
+            />
+          </div>
+
+          <div class="form-group col-md-4 my-2">
+            <label for="note">Notes (optional)</label>
+            <input
+              type="text"
+              autocomplete="off"
+              id="note"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group mt-4">
+            <input type="submit" value="Add Recipe" class="btn btn-primary" />
+          </div>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
