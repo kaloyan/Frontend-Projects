@@ -34,6 +34,20 @@ function displayRecipes() {
   recipeContainer.innerHTML = result;
 }
 
+function saveRecipes() {
+  localStorage.setItem("recipes", JSON.stringify(recipes));
+}
+
+function loadRecipes() {
+  const result = localStorage.getItem("recipes");
+
+  if (result) {
+    recipes = JSON.parse(result);
+  } else {
+    recipes = [];
+  }
+}
+
 // event listeners
 recipeForm.addEventListener("submit", (ev) => {
   ev.preventDefault();
@@ -55,5 +69,9 @@ recipeForm.addEventListener("submit", (ev) => {
   // clear form
   ev.currentTarget.reset();
 
+  saveRecipes();
   displayRecipes();
 });
+
+loadRecipes();
+displayRecipes();
