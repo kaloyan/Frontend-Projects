@@ -73,5 +73,16 @@ recipeForm.addEventListener("submit", (ev) => {
   displayRecipes();
 });
 
+recipeContainer.addEventListener("click", (ev) => {
+  if (!ev.target.matches(".btn-outline-danger")) return;
+
+  const id = ev.target.value;
+
+  recipes = recipes.filter((item) => item.id != id);
+  saveRecipes();
+  displayRecipes();
+});
+
+// init application
 loadRecipes();
 displayRecipes();
